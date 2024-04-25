@@ -1,4 +1,9 @@
 :root{
     --white-primary:#fff;
     --black-primary:#000;
+
+    --dark-tertiary: #2164A7;
+    --ligth-tertiary:#3DA5D6;
+
+    --ligth-green: #71BFB6;
 }

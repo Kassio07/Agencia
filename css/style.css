@@ -30,13 +30,14 @@ p{
 header{
     max-width: 1440px;
     margin: 0 auto;
-    height: 100vh;
+    height: auto;
     position: relative;
 }
 
 .container-geral{
     max-width: 1200px;
     margin: 0 auto;
+    padding: 20px;
 }
 
 .header-img{
@@ -54,7 +55,7 @@ header{
     color: #fff;
     padding: 50px 40px;
     top: 35%;
-    left: 70%;
+    right: 10%;
     text-align: center;
     opacity: 0.8;
 }
@@ -67,8 +68,8 @@ header{
 .header-text{
     position: absolute;
     background-color: #E1E1E1;
-    bottom: 0;
-    height: 13rem;
+    bottom: -17px;
+    height: 15rem;
     width: 100vw;
     opacity: 0.9;
 
@@ -82,6 +83,227 @@ header{
     max-width: 350px;
 }
 
+
+/* Profissões */
+
+.service-cards{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0px;
+}
+
+.service{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.service-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 150px;
+    width: 150px;   
+    color: var(--white-primary);
+}
+
+
+
+.service-text{
+    margin-left: 20px;
+    line-height: 20px;
+    max-width: 600px;
+}
+
+.service-text>h3{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.service-text>p{
+    font-size: 13px;
+}
+
+
+.one{
+    background-color: var(--dark-tertiary);
+}
+
+.one-text{
+    color: var(--dark-tertiary);
+}
+
+.two{
+    background-color: var(--ligth-tertiary);
+}
+
+.two-text{
+    color: var(--ligth-tertiary);
+}
+
+.three{
+    background-color: var(--ligth-green);
+}
+.three-text{
+    color: var(--ligth-green);
+}
+
+@media (max-width: 768px){
+  .service{
+    flex-direction: column;
+  }
+
+  .service-card{
+    width: 300px;
+  }
+  .service-text{
+    text-align: center;
+    padding: 20px;
+    }
+  
+}
+
+/* Especialidades section */
+
+
+.especialidades{
+    background-image: url('../img/rodape.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    height: auto;
+    width: 100vw;
+}
+
+.containerSection{
+    display: flex;
+    flex-direction: column;
+}
+
+.cardsSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    background-color: var(--white-primary);
+    flex: 1;
+    padding: 60px 30px;
+    text-align: center;
+    margin: 25px 10px;
+    opacity: 0.9;
+}
+
+.card i{
+    margin-bottom: 15px;
+    font-size: 30px;
+    opacity: 0.6;
+}
+
+.card>p{
+    text-align: left;
+    opacity: 0.7;
+}
+
+.sectionForm{
+    background-color: var(--white-primary);
+    padding: 25px;
+    max-width: 765px;
+    opacity: 0.5;
+}
+
+form{
+    display: inline-block;
+}
+
+form input{
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid var(--black-primary);
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+input:focus{
+    outline: none;
+}
+
+textarea{
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid var(--black-primary);
+}
+
+textarea:focus{
+    outline: none;
+}
+
+.btn-form input{
+    background-color: var(--black-primary);
+    color: var(--white-primary);
+    padding: 10px 20px;
+    border: none;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px){
+    .cardsSection{
+        flex-direction: column;
+    }
+    
+    .card{
+        margin: 15px 0;
+    }
+
+    .header-img{
+        height: 400px;
+    }
+
+    .header-text{
+        bottom: 30%;
+        height: 13rem;
+    }
+
+    .header-text h1{
+        margin: 10px 0;
+        font-size: 18px;
+        text-align: center;
+    }
+    .header-text p{
+        font-size: 13px;
+        margin-top: 10px;
+    }
+
+    .agencia-x{
+        padding: 25px 15px;
+    }
+
+    .agencia-x h2{
+        font-size: 16px;
+    }
+    .agencia-x p{
+        font-size: 12px;
+    }
+    
+  }
+
+  /* footer */
+
+  footer{
+    padding: 25px 0 10px 0;
+    text-align: center;
+  }
+
+  footer p{
+    font-size: 12px;
+    font-weight: bold;
+  }
 
 
 
